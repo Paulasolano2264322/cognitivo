@@ -6,4 +6,5 @@ asistente estudiantil
 inputs 
 <img width="1920" height="1080" alt="cognitivo 2" src="https://github.com/user-attachments/assets/44b5cfd7-941f-4e02-8dc0-a4df8d35b506" />
 diagrama de flujo 
-[diagrama de flujo.zip](https://github.com/user-attachments/files/31563382/diagrama.de.flujo.zip)
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/0a1e90f0-0be7-4ec9-b96b-0fb8ee5b3736" />
+
