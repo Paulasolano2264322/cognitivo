@@ -7,4 +7,22 @@ inputs
 <img width="1920" height="1080" alt="cognitivo 2" src="https://github.com/user-attachments/assets/44b5cfd7-941f-4e02-8dc0-a4df8d35b506" />
 diagrama de flujo 
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/0a1e90f0-0be7-4ec9-b96b-0fb8ee5b3736" />
-
+filtros de atención 
+filtro de longitud de texto 
+1. Filtro de longitud: controlar mensajes demasiado extensos.
+Menos de 100 palabras → atención completa.
+Entre 100 y 500 palabras → identificar información principal.
+Más de 500 palabras → priorizar palabras clave, ideas principales y última instrucción.
+2 filtro de palabras importantes: El asistente busca palabras importantes relacionadas con el contexto académico.
+Ejemplos:
+examen,parcial,tarea,urgente,entregar,cálculo,química,programación,fecha
+Si detecta estas palabras, aumenta su prioridad.
+3 filtro emocional:
+3 filtro emocional:
+3 filtro emocional:Detecta el tono general del estudiante para adaptar la respuesta.
+Por ejemplo:
+Confusión → explicación más sencilla.
+Estrés → dividir el problema en pasos.
+Prisa → respuesta directa.
+Curiosidad → explicación más amplia.
+Frustración → lenguaje tranquilo y ejercicios progresivos.
