@@ -27,26 +27,44 @@ Prisa → respuesta directa.
 Curiosidad → explicación más amplia.
 Frustración → lenguaje tranquilo y ejercicios progresivos.
 
-Tipo de Memoria	Categoría de Datos	Descripción	Ejemplo de Entrada
-Semántica (LTM)	Conceptos académicos	Conocimientos generales utilizados para resolver consultas académicas.	"Una derivada representa la tasa de cambio de una función."
-Semántica (LTM)	Fórmulas y procedimientos	Fórmulas, reglas y procedimientos necesarios para las diferentes asignaturas.	"Fórmula de pendiente: m = (y₂-y₁)/(x₂-x₁)."
-Semántica (LTM)	Asignaturas	Información organizada por áreas académicas.	"Cálculo, Química, Programación e Inteligencia Artificial."
-Semántica (LTM)	Fechas y conceptos académicos generales	Información permanente relacionada con actividades académicas cuando sea necesario conservarla como referencia.	"Un parcial corresponde a una evaluación académica."
-Episódica (LTM)	Historial de interacción	Información relevante de conversaciones anteriores que ayude a mantener el contexto.	"El estudiante estaba trabajando ejercicios de derivadas."
-Episódica (LTM)	Perfil académico	Datos útiles del estudiante para personalizar la asistencia.	"El estudiante cursa Ingeniería en Inteligencia Artificial."
-Episódica (LTM)	Preferencias de aprendizaje	Forma en la que el estudiante prefiere recibir explicaciones.	"Prefiere explicaciones paso a paso y de dificultad progresiva."
-Episódica (LTM)	Horario y actividades	Información personal de organización académica proporcionada por el estudiante.	"Tiene clase de Cálculo los lunes."
-Memoria de trabajo	Mensaje actual	Información temporal que el agente necesita mantener mientras procesa la solicitud.	"Resolver el ejercicio 3 de la guía."
-Memoria de trabajo	Resultados de los filtros	Información obtenida durante el análisis del mensaje actual.	"Palabra clave detectada: parcial."
-Memoria de trabajo	Contexto inmediato	Datos necesarios para construir la respuesta actual.	"El estudiante necesita una explicación sencilla."
-3.1 Memoria semántica
+## 3. Arquitectura de Memoria
 
-La memoria semántica funciona como la enciclopedia interna del asistente. Contiene conocimientos académicos relativamente permanentes, como conceptos, fórmulas, definiciones, procedimientos y contenidos organizados por asignatura.
+La arquitectura de memoria del agente permite almacenar y recuperar información necesaria para responder de manera coherente y adaptada a las necesidades del estudiante. Se organiza principalmente en **memoria semántica**, **memoria episódica** y **memoria de trabajo**.
+
+| **Tipo de Memoria** | **Categoría de Datos**                  | **Descripción**                                                                                                 | **Ejemplo de Entrada**                                           |
+| ------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Semántica (LTM)     | Conceptos académicos                    | Conocimientos generales utilizados para resolver consultas académicas.                                          | "Una derivada representa la tasa de cambio de una función."      |
+| Semántica (LTM)     | Fórmulas y procedimientos               | Fórmulas, reglas y procedimientos necesarios para las diferentes asignaturas.                                   | "Fórmula de pendiente: m = (y₂-y₁)/(x₂-x₁)."                     |
+| Semántica (LTM)     | Asignaturas                             | Información organizada por áreas académicas.                                                                    | "Cálculo, Química, Programación e Inteligencia Artificial."      |
+| Semántica (LTM)     | Fechas y conceptos académicos generales | Información permanente relacionada con actividades académicas cuando sea necesario conservarla como referencia. | "Un parcial corresponde a una evaluación académica."             |
+| Episódica (LTM)     | Historial de interacción                | Información relevante de conversaciones anteriores que ayude a mantener el contexto.                            | "El estudiante estaba trabajando ejercicios de derivadas."       |
+| Episódica (LTM)     | Perfil académico                        | Datos útiles del estudiante para personalizar la asistencia.                                                    | "El estudiante cursa Ingeniería en Inteligencia Artificial."     |
+| Episódica (LTM)     | Preferencias de aprendizaje             | Forma en la que el estudiante prefiere recibir explicaciones.                                                   | "Prefiere explicaciones paso a paso y de dificultad progresiva." |
+| Episódica (LTM)     | Horario y actividades                   | Información personal de organización académica proporcionada por el estudiante.                                 | "Tiene clase de Cálculo los lunes."                              |
+| Memoria de trabajo  | Mensaje actual                          | Información temporal que el agente necesita mantener mientras procesa la solicitud.                             | "Resolver el ejercicio 3 de la guía."                            |
+| Memoria de trabajo  | Resultados de los filtros               | Información obtenida durante el análisis del mensaje actual.                                                    | "Palabra clave detectada: parcial."                              |
+| Memoria de trabajo  | Contexto inmediato                      | Datos necesarios para construir la respuesta actual.                                                            | "El estudiante necesita una explicación sencilla."               |
+
+### 3.1 Memoria semántica
+
+La **memoria semántica** funciona como la enciclopedia interna del asistente. Contiene conocimientos académicos relativamente permanentes, como conceptos, fórmulas, definiciones, procedimientos y contenidos organizados por asignatura.
 
 Esta memoria permite que el agente responda preguntas sin depender únicamente de la información presente en el mensaje actual.
 
-3.2 Memoria episódica
+### 3.2 Memoria episódica
 
-La memoria episódica almacena información relacionada con las interacciones y experiencias académicas del estudiante. Su función es conservar el contexto necesario para personalizar futuras respuestas.
+La **memoria episódica** almacena información relacionada con las interacciones y experiencias académicas del estudiante. Su función es conservar el contexto necesario para personalizar futuras respuestas.
 
 Por ejemplo, puede almacenar que el estudiante está trabajando en un tema determinado, qué tipo de explicación prefiere o qué actividad académica estaba realizando.
+
+### 3.3 Memoria de trabajo
+
+La **memoria de trabajo** contiene la información temporal utilizada durante el procesamiento de una solicitud. En ella se mantienen el mensaje actual, las palabras clave identificadas, el estado emocional detectado y la información priorizada por los filtros de atención.
+
+Su contenido puede cambiar con cada nueva interacción.
+
+### 3.4 Flujo de utilización de la memoria
+
+El agente recibe el mensaje del estudiante y analiza la información mediante los filtros de atención. Posteriormente, consulta la memoria correspondiente y combina la información recuperada con el contexto actual para generar una respuesta adaptada.
+
+**Mensaje del usuario → Filtros de atención → Memoria de trabajo → Recuperación de memoria semántica/episódica → Priorización → Generación de respuesta**
