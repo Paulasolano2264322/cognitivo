@@ -72,5 +72,8 @@ El agente recibe el mensaje del estudiante y analiza la información mediante lo
 <img width="720" height="528" alt="WhatsApp Image 2026-11-06 at 10 38 25 AM (1)" src="https://github.com/user-attachments/assets/2c4376da-e941-4d2a-9dce-1f2210f906a9" />
 <img width="720" height="633" alt="WhatsApp Image 2026-11-06 at 10 38 25 AM" src="https://github.com/user-attachments/assets/ae0d0de6-9b3f-4d80-91e1-76980bfca729" />
 
+<img width="720" height="971" alt="WhatsApp Image 2026-11-06 at 11 30 52 AM" src="https://github.com/user-attachments/assets/9335f0f9-d4b1-4e33-ad7d-fbf5807510f9" />
+<img width="720" height="1130" alt="WhatsApp Image 2026-11-06 at 11 30 51 AM (1)" src="https://github.com/user-attachments/assets/3e344594-c4d5-442b-b9cf-721fe367ec3e" />
+<img width="720" height="1030" alt="WhatsApp Image 2026-11-06 at 11 30 51 AM" src="https://github.com/user-attachments/assets/c9876c94-562e-4dc0-ac57-de90fec6bf94" />
 
 
