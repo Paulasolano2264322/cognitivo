@@ -68,3 +68,9 @@ Su contenido puede cambiar con cada nueva interacción.
 El agente recibe el mensaje del estudiante y analiza la información mediante los filtros de atención. Posteriormente, consulta la memoria correspondiente y combina la información recuperada con el contexto actual para generar una respuesta adaptada.
 
 **Mensaje del usuario → Filtros de atención → Memoria de trabajo → Recuperación de memoria semántica/episódica → Priorización → Generación de respuesta**
+<img width="720" height="886" alt="WhatsApp Image 2026-11-06 at 10 26 00 AM" src="https://github.com/user-attachments/assets/8fa04f14-89d5-49cf-a9ee-bad2a7151600" />
+<img width="720" height="528" alt="WhatsApp Image 2026-11-06 at 10 38 25 AM (1)" src="https://github.com/user-attachments/assets/2c4376da-e941-4d2a-9dce-1f2210f906a9" />
+<img width="720" height="633" alt="WhatsApp Image 2026-11-06 at 10 38 25 AM" src="https://github.com/user-attachments/assets/ae0d0de6-9b3f-4d80-91e1-76980bfca729" />
+
+
+
