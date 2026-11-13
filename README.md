@@ -75,5 +75,10 @@ El agente recibe el mensaje del estudiante y analiza la información mediante lo
 <img width="720" height="971" alt="WhatsApp Image 2026-11-06 at 11 30 52 AM" src="https://github.com/user-attachments/assets/9335f0f9-d4b1-4e33-ad7d-fbf5807510f9" />
 <img width="720" height="1130" alt="WhatsApp Image 2026-11-06 at 11 30 51 AM (1)" src="https://github.com/user-attachments/assets/3e344594-c4d5-442b-b9cf-721fe367ec3e" />
 <img width="720" height="1030" alt="WhatsApp Image 2026-11-06 at 11 30 51 AM" src="https://github.com/user-attachments/assets/c9876c94-562e-4dc0-ac57-de90fec6bf94" />
+sistema de motivacion y emosion 
+<img width="1224" height="1285" alt="WhatsApp Image 2026-11-13 at 10 36 28 AM" src="https://github.com/user-attachments/assets/ca983df3-c2e0-46f9-8ff8-d05080185733" />
+protocolo de seguridad emosional 
+<img width="1536" height="1024" alt="WhatsApp Image 2026-11-13 at 10 40 46 AM" src="https://github.com/user-attachments/assets/b4f57c56-9eb8-4571-b97e-b7b532866cdf" />
+
 
 
